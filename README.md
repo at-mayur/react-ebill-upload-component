@@ -1,4 +1,53 @@
-# Getting Started with Create React App
+# React-based user interface to upload e-bill PDFs.
+A file upload functionality using React that accepts only pdf files.
+Display a preview of the uploaded pdf to the user.
+
+
+## Functionalities
+1.  A React component that displays a form for uploading an e-bill pdf file.
+
+    A form for uploading an e-bill pdf file.
+
+    ![E-Bill upload form](./product_images/ebillUpload1.jpg)
+
+    > Only pdf files can be selected.
+
+2. Preview of the selected pdf.
+
+    Display a preview of the selected pdf to the user.
+
+    ![E-Bill Preview](./product_images/ebillUpload2.jpg)
+
+3. E-Bill upload status.
+
+    A mock API endpoint (simulated server response) that saves the file and responds with the path of the file and status of the upload process.
+
+    Display the upload status in the UI.
+
+    ![Upload Status](./product_images/ebillUpload3.jpg)
+
+
+## Folder Structure
+
+1. /src/components/
+    
+    * Contains 2 components namely BillUploadComp, Navbar.
+    
+2. /src/api/
+
+    * Contains fileApiRequest.js which will call POST request to API to upload an e-bill file.
+    
+3. /src/product_images/
+
+    * Contains resulting component images.
+    
+11. /src/styles/
+
+    * Contains styles for components.
+    
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

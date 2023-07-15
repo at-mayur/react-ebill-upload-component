@@ -1,0 +1,212 @@
+
+/* main navbar container styles */
+.navbarContainer{
+    width: 100%;
+    height: 10%;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* navbar title styles */
+.navBrandContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* nav menu items container styles */
+.navItemsContainer{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+
+
+/* nav item styles */
+.navItem{
+    position: relative;
+}
+
+.navItem .navIcon{
+    font-size: 24px;
+    display: block;
+}
+
+.navItem:hover{
+    transform: scale(1.1);
+}
+
+/* display menutip on hover to nav item */
+.navItem:hover .menuTip{
+    display: block;
+}
+
+/* menutip styles */
+.menuTip{
+    font-size: 12px;
+    box-sizing: border-box;
+    background-color: navy;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    z-index: 2;
+    position: absolute;
+    top: 80%;
+    display: none;
+}
+
+
+/* user profile img styles */
+.userImgContainer img{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+
+/* bell icon styles */
+.bellIcon{
+    position: relative;
+}
+
+.notificationDot{
+    font-size: 12px;
+    color: rgb(222, 0, 0);
+    position: absolute;
+    top: 0;
+    right: -7px;
+}
+
+/* adding animation for navbar title */
+.navTitle{
+    font-size: 32px;
+    font-weight: bold;
+    animation: rubberBandEffect 1s ease-in-out;
+}
+
+/* adding animation for nav items */
+.search{
+    animation: rubberBandEffect 1s 0.8s ease-in-out;
+}
+
+.notify{
+    animation: rubberBandEffect 1s 1.6s ease-in-out;
+}
+
+.profile{
+    animation: rubberBandEffect 1s 2.4s ease-in-out;
+}
+
+
+/* Styles for nav menu toggle btn */
+.navBtn{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 0;
+    display: none;
+}
+
+.navBtn:hover{
+    font-size: 36px;
+}
+
+.navBtnFocus{
+    font-size: 36px;
+    text-shadow: 0 0 8px rgb(56, 56, 254);
+}
+
+.show{
+    display: flex !important;
+}
+
+
+/* media queries to adjust navbar for smaller screen sizes */
+@media screen and (max-width: 1100px) {
+    .navItemsContainer{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navBtn{
+        display: block;
+    }
+
+    .navBrandContainer{
+        width: 100%;
+    }
+
+    .navItemsContainer{
+        width: 35%;
+        flex-direction: column;
+        background-color: lightgrey;
+        border-radius: 10px;
+        position: absolute;
+        right: 3%;
+        top: 90%;
+        display: none;
+    }
+
+    .navItem{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navItem:hover{
+        transform: scale(1);
+        background-color: rgb(198, 197, 197);
+        border-radius: 10px;
+    }
+
+    .userImgContainer img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+
+    .notificationDot{
+        font-size: 10px;
+    }
+
+    .menuTip{
+        font-size: 14px;
+        position: relative;
+        display: block;
+        background-color: transparent;
+        color: black;
+        margin-left: 8px;
+    }
+}
+
+
+/* keyframes for animation */
+@keyframes rubberBandEffect {
+    from{
+        transform: scale(1.1);
+    }
+    25%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    75%{
+        transform: scale(0.95);
+    }
+    to{
+        transform: scale(1);
+    }
+}

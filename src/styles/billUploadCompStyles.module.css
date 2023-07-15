@@ -1,0 +1,208 @@
+
+/* main container styles */
+.appContainer{
+    width: 70%;
+    height: 80%;
+    background-image: linear-gradient(160deg, rgb(219, 239, 255), white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* content container */
+.contentContainer{
+    width: 100%;
+    height: 86%;
+    box-sizing: border-box;
+    padding: 2% 5%;
+    overflow: scroll;
+}
+
+.contentContainer::-webkit-scrollbar{
+    display: none;
+}
+
+/* form and preview container */
+.formPreviewContainer{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* form conainer styles */
+.formContainer{
+    width: 60%;
+    height: 100%;
+}
+
+
+/* preview container styles */
+.previewContainer{
+    width: 38%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* styles for header */
+.header{
+    color: rgb(1, 1, 101);
+}
+
+/* styles for preview */
+.previewContainer object{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid black;    
+}
+
+/* label styles */
+.uploadForm label{
+    display: block;
+    font-size: 18px;
+    margin: 8% 0;
+}
+
+.uploadForm label span{
+    display: block;
+    color: rgb(237, 2, 2);
+}
+
+
+/* input file styles */
+.uploadForm input{
+    width: 90%;
+    display: block;
+    font-size: 20px;
+    margin: 8% 0;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding-right: 5px;
+    color: grey;
+    border-radius: 10px;
+}
+
+.uploadForm input::-webkit-file-upload-button{
+    box-sizing: border-box;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid grey;
+    border-radius: 10px 0 0 10px;
+}
+
+
+/* button styles within form */
+.uploadForm button{
+    margin-top: 2%;
+    display: block;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: large;
+    background: transparent;
+    border-radius: 5px;
+}
+
+/* filepath styles */
+.loaderBtnContainer p{
+    margin-top: 0;
+    color: rgb(0, 0, 113);
+}
+
+.loaderBtnContainer p span{
+    font-weight: bold;
+}
+
+
+/* next, upload button styles */
+.nextBtn{
+    border: 2px solid rgb(1, 141, 228);
+    color: rgb(1, 141, 228);
+}
+
+.nextBtn:hover{
+    background-color: rgb(1, 141, 228);
+    color: white;
+}
+
+.nextBtn:focus{
+    background-color: rgb(1, 141, 228);
+    color: white;
+}
+
+/* reset button styles */
+.resetBtn{
+    border: 2px solid rgb(221, 0, 0);
+    color: rgb(221, 0, 0);
+    margin-right: 5%;
+}
+
+.resetBtn:hover{
+    background-color: rgb(221, 0, 0);
+    color: white;
+}
+
+.resetBtn:focus{
+    background-color: rgb(221, 0, 0);
+    color: white;
+}
+
+
+/* container holding 2 buttons together */
+.btnContainer{
+    margin-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* media queries to arrange components for smaller screen sizes */
+@media screen and (max-width: 1000px){
+
+    .appContainer{
+        width: 80%;
+    }
+
+    .previewContainer{
+        width: 48%;
+    }
+
+    .formContainer{
+        width: 50%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+
+    .appContainer{
+        width: 90%;
+    }
+
+    .previewContainer{
+        width: 54%;
+    }
+
+    .formContainer{
+        width: 44%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    .previewContainer{
+        width: 100%;
+    }
+
+    .formContainer{
+        width: 100%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+}
