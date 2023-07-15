@@ -1,6 +1,6 @@
 
 // api request for uploading file
-module.exports.uploadFile = async (formData) => {
+export const uploadFile = async (formData) => {
 
     try {
         
