@@ -8,7 +8,7 @@ Display a preview of the uploaded pdf to the user.
 
     A form for uploading an e-bill pdf file.
 
-    ![E-Bill upload form](./product_images/ebillUpload1.jpg)
+    ![E-Bill upload form](./src/product_images/ebillUpload1.jpg)
 
     > Only pdf files can be selected.
 
@@ -16,7 +16,7 @@ Display a preview of the uploaded pdf to the user.
 
     Display a preview of the selected pdf to the user.
 
-    ![E-Bill Preview](./product_images/ebillUpload2.jpg)
+    ![E-Bill Preview](./src/product_images/ebillUpload2.jpg)
 
 3. E-Bill upload status.
 
@@ -24,7 +24,7 @@ Display a preview of the uploaded pdf to the user.
 
     Display the upload status in the UI.
 
-    ![Upload Status](./product_images/ebillUpload3.jpg)
+    ![Upload Status](./src/product_images/ebillUpload3.jpg)
 
 
 ## Folder Structure
