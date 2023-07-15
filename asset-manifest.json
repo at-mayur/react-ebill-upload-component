@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-ebill-upload-component/static/css/main.b4da7a05.css",
+    "main.js": "/react-ebill-upload-component/static/js/main.592c3fd6.js",
+    "index.html": "/react-ebill-upload-component/index.html",
+    "main.b4da7a05.css.map": "/react-ebill-upload-component/static/css/main.b4da7a05.css.map",
+    "main.592c3fd6.js.map": "/react-ebill-upload-component/static/js/main.592c3fd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4da7a05.css",
+    "static/js/main.592c3fd6.js"
+  ]
+}
